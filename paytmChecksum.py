@@ -58,6 +58,4 @@ def genCheckSum(body, merchant_key):
     payTMchecksum = PaytmChecksum.generateSignature(body, merchant_key)   # generating checksum
     return payTMchecksum
 
-# uvicorn main:app --host 172.22.1.185 --port 1000 --reload     -- run this
-
-# nohup uvicorn main:app --host 172.22.1.185 --port 1000
+# uvicorn main:app --host {{ip}} --port {{port}} --reload     -- run this
